@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{999bb8b2-b6eb-4fcb-a179-78e9bf01bba8}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -60,8 +60,21 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Security\" />
+    <Folder Include="regex" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\reg.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="regex\regex.cs" />
+    <Compile Include="regex\regex_class.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBT.publish.xml" />
   </ItemGroup>
 </Project>

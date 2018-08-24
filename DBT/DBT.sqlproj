@@ -74,7 +74,4 @@
     <Compile Include="regex\regex.cs" />
     <Compile Include="regex\regex_class.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="DBT.publish.xml" />
-  </ItemGroup>
 </Project>

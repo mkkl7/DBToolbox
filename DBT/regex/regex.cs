@@ -8,7 +8,7 @@ using DBT;
 public partial class UserDefinedFunctions
 {
     [Microsoft.SqlServer.Server.SqlFunction]
-    public static SqlString RegexWithGroup(string inp, string regex, string group,  int? groupid)
+    public static SqlString RegexWithGroup(string inp, string regex, string group, int? groupid)
     {
         return new SqlString(regex_class.GetRegexWithGroup(inp, regex, group, groupid));        
     }
